@@ -33,7 +33,7 @@ If you register `PhoneStateReceiver` in the `AndroidManifest.xml` the reciever w
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
 </receiver>` <br/>  <br/> 
-However, this app uses a diferent approach and registers broadcast reviecer in `setOnClickListener` method in `MainActivity.java`. After the call has been disconnected the broadcast reviecer becomes unregistered. In this way the broadcast reciever will be active only during the short time of disconnecting the call after you click the Hangup button. <br/> 
+However, this app uses a diferent approach and registers broadcast reviecer in `setOnClickListener` method in `MainActivity.java`. After the call has been disconnected the broadcast reciever becomes unregistered. In this way the broadcast reciever will be active only during the short time of disconnecting the call after you click the Hangup button. <br/> 
 ### How to use this app
 To test this app you first have to install it on on your phone. Than you can make a call using native Android calling app. While in call you have to navigate back to your home screen, find this app, open it and click on the Hangup button. The app will than disconnect the cal. (Note: The method will disconnect the call regardles of the phone state. Meaning that the call will be disconnected while ringing and also if the method has been executed during the accepted phone call.)
 
