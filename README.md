@@ -1,4 +1,4 @@
-# CallHangupAndroid
+# CallHangup Android
 ## UPDATE
 This is avalilable only on API < 28 (Pie).
 
